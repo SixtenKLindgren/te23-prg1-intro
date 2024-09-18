@@ -31,7 +31,7 @@ suits = [colored("hearts ♥", "red"), colored("spades ♠", "black"), colored("
 # Skapar en lista: deck som har alla kort i sig
 deck = [card(number, suit) for number in ["Ace", 2, 3, 4, 5, 6, 7, 8, 9 , 10, "Jack", "Queen", "King"] for suit in suits] 
 
-# Skapar dealers och spelarens hand
+# Skapar dealers och spelarens hand (om man börjar med två ess får man värdet av 22 och förlorar när man egentligen ska får värdet av 14)
 stood = 0
 dealer = random.sample(deck, 2)
 player = random.sample(deck, 2)

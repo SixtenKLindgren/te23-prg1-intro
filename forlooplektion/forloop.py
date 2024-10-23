@@ -14,6 +14,6 @@ while True :
             sak = input("Vilken sak vill du lägga till?\n")
             saker.append(sak.capitalize())
         if choice == "4" :
-            print(saker[random.randint(0,len(saker))])
+            print(saker[random.randint(len(saker))])
     else :
         print("Jag fattar inte")
